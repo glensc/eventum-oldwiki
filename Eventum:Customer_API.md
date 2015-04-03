@@ -1,11 +1,6 @@
----
-title: Eventum:Customer API
-permalink: /Eventum:Customer_API/
----
-
 <span style="background:yellow; color:black"> This is a work in progress... </span>
 
-The most useful information for now is located [here](/Eventum:Extending_and_Integrating_Eventum "wikilink").
+The most useful information for now is located [[here|Eventum:Extending_and_Integrating_Eventum]].
 
 <hr>
 Out-of-the-box, Eventum will meet many of your business needs.
