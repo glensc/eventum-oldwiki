@@ -69,7 +69,7 @@ Customizing the System Generated Mail Messages
 
 Eventum uses the [Smarty](http://www.smarty.net/) Template Engine. See the [Online Documentation](http://www.smarty.net/docs.php) for Smarty templating syntax.
 
-You should also check out <Eventum:Localization:Templates> to understand what the `{t} {/t}` tags are for.
+You should also check out [Eventum:Localization:Templates](Localization:Templates "wikilink") to understand what the `{t} {/t}` tags are for.
 
 File names are pretty much self-explanatory. Location: `../path_to_eventum/templates/notifications/`
 

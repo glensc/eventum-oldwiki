@@ -1,1 +1,1 @@
-1.  REDIRECT <Eventum:Projects>
+1.  REDIRECT [Eventum:Projects](Projects "wikilink")

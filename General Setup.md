@@ -25,7 +25,7 @@ This will be included in the From address of all emails sent by Eventum, before 
 
 ### Email Routing Interface
 
-The [Email Routing Interface](Eventum:Email Routing Interface "wikilink") is an optional way to automatically associate emails (or notes or drafts) with an Eventum issue, with Email Integration feature enabled.
+The [Email Routing Interface](Email Routing Interface "wikilink") is an optional way to automatically associate emails (or notes or drafts) with an Eventum issue, with Email Integration feature enabled.
 
 The default behavior is header (Message-ID/In-Reply-To) routing. Mail clients sometimes mangle these headers which cause problems for Eventum. Using subject based routing is better then header based while the most reliable is address (issue-XXX@example.com) based.
 
@@ -37,11 +37,11 @@ This will be included in the From address of all notes sent by Eventum, before o
 
 ### Internal Note Routing Interface
 
-Same as [Email Routing Interface](Eventum:General_Setup#Email_Routing_Interface "wikilink") for Internal Notes.
+Same as [Email Routing Interface](General_Setup#Email_Routing_Interface "wikilink") for Internal Notes.
 
 ### Email Draft Interface
 
-Same as [Email Routing Interface](Eventum:General_Setup#Email_Routing_Interface "wikilink") for Drafts.
+Same as [Email Routing Interface](General_Setup#Email_Routing_Interface "wikilink") for Drafts.
 
 ### SCM Integration
 
@@ -105,7 +105,7 @@ For a particular issue, you may change the notification options for each single 
 
 ### Email Reminder System Status Information
 
-The reminder system was designed to serve as a safety net for issues that need attention. Depending on what configuration you create, you may have several reminders (or alerts) to send out whenever an issue needs attention, for whatever parameter you may deem necessary. It requires to set a [cron job](Eventum:Doing_a_fresh_install "wikilink"). To add a reminder:
+The reminder system was designed to serve as a safety net for issues that need attention. Depending on what configuration you create, you may have several reminders (or alerts) to send out whenever an issue needs attention, for whatever parameter you may deem necessary. It requires to set a [cron job](Doing_a_fresh_install "wikilink"). To add a reminder:
 
 1. Go to Manage Issue Reminders
 
@@ -119,7 +119,7 @@ The reminder system was designed to serve as a safety net for issues that need a
 
 6. Create 1 (or more) Condition, Choose - Field "Last Update Date" Choose - Operator "greater or equal than" Enter - Value "2" (hours) or other condition.
 
-7. Verify if the reminder emails are sent before and after the condition is true, from command line, run the [reminder script](Eventum:Doing_a_fresh_install#Reminder_System_.28misc.2Fcheck_reminders.php.29 "wikilink").
+7. Verify if the reminder emails are sent before and after the condition is true, from command line, run the [reminder script](Doing_a_fresh_install#Reminder_System_.28misc.2Fcheck_reminders.php.29 "wikilink").
 
 Notice that you can add multiple simultaneous Conditions for a single Action.
 

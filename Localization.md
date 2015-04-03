@@ -169,7 +169,7 @@ We are planning on translating Eventum into the following languages. If you woul
 `  Maria Oberg `<maria.oberg@redpill.se>
 `  Fredrik Svensson `<fredrik.svensson@redpill.se>
 
--   Japanese (日本語) - Notes about [Japanese character sets](Eventum:Localization:Japanese "wikilink") and E-mail integration.
+-   Japanese (日本語) - Notes about [Japanese character sets](Localization:Japanese "wikilink") and E-mail integration.
 
 `  Yukihiro Kawada `<yukihiro.kawada(at)gmail(dot)com>
 `  Brian LaVallee `<brian.lavallee(at)pbxl(dot)com>
@@ -233,7 +233,7 @@ Once you have put the translated strings into the eventum file, run "msgfmt -f -
 Known Issues
 ------------
 
-[Untranslated Items](Eventum:Localization:UntranslatedItems "wikilink")
+[Untranslated Items](Localization:UntranslatedItems "wikilink")
 
 External Reading Material
 -------------------------

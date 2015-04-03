@@ -1,6 +1,6 @@
 == Quick Notes ==
 
-When you're setting up Eventum's [Email Routing Interface](Eventum:Email Routing Interface "wikilink") for qmail, use these options in the Administration -\> General Setup area:
+When you're setting up Eventum's [Email Routing Interface](Email Routing Interface "wikilink") for qmail, use these options in the Administration -\> General Setup area:
 
 `Email Routing Interface: Enabled`
 `Recipient Type Flag: [doesn't matter, choose any]`
