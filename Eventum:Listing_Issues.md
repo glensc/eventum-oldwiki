@@ -1,4 +1,4 @@
-All these sections except for "Search Results" can be toggled on/off by a link in the upper right corner of the "Search Results" section. This page reloads at a user configurable interval (See [Editing Preferences](/Editing_Preferences "wikilink")).
+All these sections except for "Search Results" can be toggled on/off by a link in the upper right corner of the "Search Results" section. This page reloads at a user configurable interval (See [Editing Preferences](Editing_Preferences "wikilink")).
 
 Quick Search
 ------------
