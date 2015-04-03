@@ -12,7 +12,7 @@ Somebody says: hmm I see this way:
 
 * * * * *
 
---[Eliotbq](/User:Eliotbq "wikilink") 02:01, 27 Jul 2005 (CEST) Disclaimer: this is how I see it as a fairly new user:
+--[Eliotbq](User:Eliotbq "wikilink") 02:01, 27 Jul 2005 (CEST) Disclaimer: this is how I see it as a fairly new user:
 
 Issue creation
 --------------

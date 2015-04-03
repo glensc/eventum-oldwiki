@@ -4,4 +4,4 @@ If you are not familiar with the licensing details of the GPL, see the following
 
 -   [FSF's GPL license page](http://www.gnu.org/copyleft/gpl.html)
 
-[The GNU General Public License](/Image:Lgplv3-88x31.png "wikilink")
+![The GNU General Public License](Lgplv3-88x31.png "The GNU General Public License")

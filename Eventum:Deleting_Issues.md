@@ -164,4 +164,4 @@ A modified script for Eventum 2.1.1: This script use the global variable APP_DEF
 ?\>
 
 </pre>
-A modified Script can be found on the [discussion page](/Eventum:Talk:Deleting_Issues "wikilink")
+A modified Script can be found on the [discussion page](Eventum:Talk:Deleting_Issues "wikilink")

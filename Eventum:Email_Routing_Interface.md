@@ -10,9 +10,9 @@ Setup
 
 These pages contain information on setting up the email routing interface:
 
--   [Doing a fresh install](/Eventum:Doing a fresh install "wikilink")
--   [Setting up email routing with Sendmail](/Eventum:Setting up email routing with Sendmail "wikilink")
--   [Setting up email routing with qmail](/Eventum:Setting up email routing with qmail "wikilink")
--   [Setting up email routing with postfix](/Eventum:Setting up email routing with postfix "wikilink")
--   [Setting up email routing with exim](/Eventum:Setting up email routing with exim "wikilink")
--   [Setting up email routing with 1 email account for multiple projects](/Eventum:Setting up email routing with 1 email account for multiple projects "wikilink")
+-   [Doing a fresh install](Eventum:Doing a fresh install "wikilink")
+-   [Setting up email routing with Sendmail](Eventum:Setting up email routing with Sendmail "wikilink")
+-   [Setting up email routing with qmail](Eventum:Setting up email routing with qmail "wikilink")
+-   [Setting up email routing with postfix](Eventum:Setting up email routing with postfix "wikilink")
+-   [Setting up email routing with exim](Eventum:Setting up email routing with exim "wikilink")
+-   [Setting up email routing with 1 email account for multiple projects](Eventum:Setting up email routing with 1 email account for multiple projects "wikilink")

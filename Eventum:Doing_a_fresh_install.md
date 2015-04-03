@@ -18,7 +18,7 @@ If Eventum's installation script finds that it needs a few directories or permis
 
 After the installation is done, you should go and take all of the available privileges from the '/setup' directory, so other people are not allowed to go in there and mess with your configuration.
 
-**IMPORTANT:** If you already have an installation of Eventum, please read the [UPGRADE](/Upgrading "wikilink") file.
+**IMPORTANT:** If you already have an installation of Eventum, please read the [UPGRADE](Upgrading "wikilink") file.
 
 **IMPORTANT:** If you are having trouble getting Eventum to work, please read the trouble shooting section of the [FAQ](/FAQ "wikilink") file.
 

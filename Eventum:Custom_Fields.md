@@ -14,4 +14,4 @@ Follow these steps to create a custom field:
 
 You can create as many custom fields as required.
 
-[Custom Fields](/image:Eventum_custom_fields.png "wikilink")
+[Custom Fields](image:Eventum_custom_fields.png "wikilink")

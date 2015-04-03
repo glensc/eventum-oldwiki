@@ -60,4 +60,4 @@ You can get the value of the iss_sta_id by looking in the MySQL table or by look
 
 -   Check carefully the values of your status ids before using the script!
 
-[Raimunds](/User:Raimunds "wikilink") 17:34, 2 Oct 2006 (CEST)
+[Raimunds](User:Raimunds "wikilink") 17:34, 2 Oct 2006 (CEST)

@@ -128,7 +128,7 @@ We are planning on translating Eventum into the following languages. If you woul
 `  Ralf Kuehnbaum-Grashorn `<ralf@kuehnbaum.de>
 `  Wolfgang Gassler `<w.gassler(at)medienhof(dot)at>
 `  `[`Bene` `Homann`](http://www.pragerplatz.de/)`, `[`bene@pragerplatz.de`](mailto:bene@pragerplatz.de)
-`  You will find the german support page (de_DE, de_AT, de_CH) `[`here`](/Localization:German "wikilink")`.`
+`  You will find the german support page (de_DE, de_AT, de_CH) `[`here`](Localization:German "wikilink")`.`
 
 -   Hungarian
 
@@ -169,7 +169,7 @@ We are planning on translating Eventum into the following languages. If you woul
 `  Maria Oberg `<maria.oberg@redpill.se>
 `  Fredrik Svensson `<fredrik.svensson@redpill.se>
 
--   Japanese (日本語) - Notes about [Japanese character sets](/Eventum:Localization:Japanese "wikilink") and E-mail integration.
+-   Japanese (日本語) - Notes about [Japanese character sets](Eventum:Localization:Japanese "wikilink") and E-mail integration.
 
 `  Yukihiro Kawada `<yukihiro.kawada(at)gmail(dot)com>
 `  Brian LaVallee `<brian.lavallee(at)pbxl(dot)com>
@@ -233,7 +233,7 @@ Once you have put the translated strings into the eventum file, run "msgfmt -f -
 Known Issues
 ------------
 
-[Untranslated Items](/Eventum:Localization:UntranslatedItems "wikilink")
+[Untranslated Items](Eventum:Localization:UntranslatedItems "wikilink")
 
 External Reading Material
 -------------------------

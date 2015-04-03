@@ -5,7 +5,7 @@ This is an application of the [Eventum:Multiple project email workaround](/Event
 Steps
 -----
 
-These steps should allow you to setup the [Email Routing Interface](/Eventum:Email Routing Interface "wikilink") (ERI) for all of your eventum projects using a single email account.
+These steps should allow you to setup the [Email Routing Interface](Eventum:Email Routing Interface "wikilink") (ERI) for all of your eventum projects using a single email account.
 Using Eventum 1.5.4 to create these steps.
 1) Create an email account on your mail server (I chose eventum_issues@example.com).
 2) Enable 'Address Extensions' for your mail server. For example, this would allow an email addressed to eventum_issues+28@example.com to be delivered to the email account eventum_isses@example.com. Eventum ERI uses the address extenion to know which issue to associate the email.
