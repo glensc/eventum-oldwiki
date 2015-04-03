@@ -1,4 +1,4 @@
-= Eventum 2.2 Release Announcement =
+# Eventum 2.2 Release Announcement
 
     Hi,
 
