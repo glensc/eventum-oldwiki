@@ -2,11 +2,13 @@ The first user created during Eventum setup has Administrator access to all Even
 
 If you want to have an access in "Administration" section with the "Configuration" section as this :
 
-`Configuration:`
-`   * General Setup`
-`   * Manage Email Accounts`
-`   * Manage Custom Fields`
-`   * Customize Issue Listing Screen`
+```
+Configuration:
+   * General Setup
+   * Manage Email Accounts`
+   * Manage Custom Fields`
+   * Customize Issue Listing Screen`
+```
 
 You need to change some information in the database.
 
