@@ -17,7 +17,7 @@ Somebody says: hmm I see this way:
 Issue creation
 --------------
 
-See [Creating Issues](/Creating_Issues "wikilink") for more details. Either Click "Create issue" and fill in all the details
+See [Creating Issues](Creating Issues "wikilink") for more details. Either Click "Create issue" and fill in all the details
 
 or from the "Associate emails" screen, select one or more unassociated emails, and click [Associate]-\>(New issue), then add the remaining details as for the first case.
 
@@ -100,4 +100,4 @@ Notifications are sent to users in the Notification List when some of the follow
 -   The eventum-user has configured his preferences to receive notifications for the proper event (issue creation or issue assigned).
 -   The user reported the issue by sendind email, with auto-creation of issues enabled or issue created from manually associated email (no setup option for disabling).
 -   The user is CC in the email that creates an issue (no setup option for disabling).
--   The issue has been set for some user to receive notification on specific issue Action (Issues are Updated, Issues are Closed, Emails are Associated, Files are Attached), default Action values set at [General Setup](/General_Setup "wikilink"), specific issue Action values set at [Edit Notification List](/Edit_Notification_List "wikilink").
+-   The issue has been set for some user to receive notification on specific issue Action (Issues are Updated, Issues are Closed, Emails are Associated, Files are Attached), default Action values set at [General Setup](General Setup "wikilink"), specific issue Action values set at [Edit Notification List](Edit Notification List "wikilink").

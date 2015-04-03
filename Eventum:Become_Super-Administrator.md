@@ -38,7 +38,7 @@ if you're having recent MySQL server you can use subquery:
 
 * * * * *
 
-another solution from Eventum User mailing list [<http://lists.mysql.com/eventum-users/1415>](/http://lists.mysql.com/eventum-users/1415 "wikilink") from Joao to update the level access to one user and one project (but administrator have a full access in all projects)
+another solution from Eventum User mailing list [<http://lists.mysql.com/eventum-users/1415>](http://lists.mysql.com/eventum-users/1415 "wikilink") from Joao to update the level access to one user and one project (but administrator have a full access in all projects)
 - Update the role
 
 ` REPLACE project_user VALUES (USER_ID_HERE, PROJECT_ID_HERE, 7);`

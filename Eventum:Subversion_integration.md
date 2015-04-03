@@ -1,6 +1,6 @@
 == Overview ==
 
-This describes how to set up [Eventum:SCM integration](/Eventum:SCM_integration "wikilink") for Subversion.
+This describes how to set up [Eventum:SCM integration](Eventum:SCM integration "wikilink") for Subversion.
 
 Setup
 -----

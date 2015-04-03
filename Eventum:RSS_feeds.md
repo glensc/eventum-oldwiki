@@ -15,7 +15,7 @@ To create a RSS feed:
 
 If you have already logged in once during the session, It will access the feed, but if you try to access the rss.php file without authentication or from outside Eventum, you will be prompted for the login information. Notice this is a [Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication) (like htaccess) which differs from Eventum authentication; you should use the same Eventum user account login and password, with the one you created the search.
 
-[Image:Eventum-RSS_feeds.png](/Image:Eventum-RSS_feeds.png "wikilink")
+![Image:Eventum-RSS_feeds.png](Eventum-RSS_feeds.png "Image:Eventum-RSS_feeds.png")
 
 Notice you have to provide an Eventum login for the RSS feed to work. Authenticated session is not required to access the RSS feed.
 

@@ -1,6 +1,6 @@
 == Note ==
 
-This is an application of the [Eventum:Multiple project email workaround](/Eventum:Multiple_project_email_workaround "wikilink") using the [Eventum:Email Routing Interface](/Eventum:Email_Routing_Interface "wikilink"). The multiple project email workaround ***does not require*** the use of the Email Routing Interface, and can be applied to the other methods of associating incoming email with issues described in [Eventum:Email integration](/Eventum:Email_integration "wikilink")
+This is an application of the [Eventum:Multiple project email workaround](Eventum:Multiple project email workaround "wikilink") using the [Eventum:Email Routing Interface](Eventum:Email Routing Interface "wikilink"). The multiple project email workaround ***does not require*** the use of the Email Routing Interface, and can be applied to the other methods of associating incoming email with issues described in [Eventum:Email integration](Eventum:Email integration "wikilink")
 
 Steps
 -----

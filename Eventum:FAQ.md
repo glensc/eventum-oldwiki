@@ -172,7 +172,7 @@ General Usage
 
 ### I want to delete one or more wrongly created issues
 
-A script to delete issues has been posted at <http://eventum.mysql.org/scripts/delete_issues.php.tar>. (See also comments under [Deleting_Issues](/Deleting_Issues "wikilink") about this script.)
+A script to delete issues has been posted at <http://eventum.mysql.org/scripts/delete_issues.php.tar>. (See also comments under [Deleting_Issues](Deleting_Issues "wikilink") about this script.)
 
 ### I have several bogus issues that I need to delete
 

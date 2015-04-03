@@ -9,7 +9,7 @@ Patches for Eventum 1.7.0
 
 -   [Subject AND header based routing](Eventum:Subject AND header based routing "wikilink") - fall back to header based routing if no issue \# found in subject
 
--   [Eventum:Hide_closed_issues_from_stats](/Eventum:Hide_closed_issues_from_stats "wikilink") - Pie charts only show issues with open status. <small>link may not be correct</small>
+-   <Eventum:Hide_closed_issues_from_stats> - Pie charts only show issues with open status. <small>link may not be correct</small>
 
 -   [Add a timeout for outgoing smtp connections 171](Eventum:Add a timeout for outgoing smtp connections 171 "wikilink") - This adds an admin configurable timeout for smtp connections. It helps preventing the php script that processes the outgoing mail queue from getting stalled and never releasing its lock
 

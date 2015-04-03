@@ -221,7 +221,7 @@ As of Eventum 2.1 Release translation status of the languages that have been sub
 Preparing Templates
 -------------------
 
-Complete! See [Localization:Templates](/Localization:Templates "wikilink") for details on the process.
+Complete! See <Localization:Templates> for details on the process.
 
 Translating PO Files
 --------------------

@@ -20,7 +20,7 @@ After the installation is done, you should go and take all of the available priv
 
 **IMPORTANT:** If you already have an installation of Eventum, please read the [UPGRADE](Upgrading "wikilink") file.
 
-**IMPORTANT:** If you are having trouble getting Eventum to work, please read the trouble shooting section of the [FAQ](/FAQ "wikilink") file.
+**IMPORTANT:** If you are having trouble getting Eventum to work, please read the trouble shooting section of the [FAQ](FAQ "wikilink") file.
 
 **IMPORTANT:** By default, the admin user login is set to to admin@example.com during installation. **Be sure to change this to a valid email address with a new password immediately**. Note that eventum will attempt to send the new password to the specified address, which should be valid to prevent the password from being exposed if the email is bounced.
 
