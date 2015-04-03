@@ -1,4 +1,4 @@
-![Welcome Screen](Eventum-Profile.jpg "fig:Welcome Screen") Eventum is a user-friendly and flexible issue tracking system that can be used by a support department to track incoming technical support requests, or by a software development team to quickly organize tasks and bugs.
+Eventum is a user-friendly and flexible issue tracking system that can be used by a support department to track incoming technical support requests, or by a software development team to quickly organize tasks and bugs.
 
 * * * * *
 
