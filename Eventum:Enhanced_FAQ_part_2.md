@@ -1,7 +1,6 @@
 You must first choose a project before editing FAQ-entries
 
-(Is it perhaps better to move FAQ-editing into the page "Manage
-Projects"?)
+(Is it perhaps better to move FAQ-editing into the page "Manage Projects"?)
 
     Index: include/class.faq.php
     ===================================================================

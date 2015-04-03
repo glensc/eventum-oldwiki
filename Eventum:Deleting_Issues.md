@@ -1,14 +1,10 @@
-It is impossible to delete issues from Eventum through the user
-interface. However, there currently are two methods of removing issues.
+It is impossible to delete issues from Eventum through the user interface. However, there currently are two methods of removing issues.
 
-1. Delete the project. By deleting the project, you will delete ALL
-issues in this project with no way to recover them.
+1. Delete the project. By deleting the project, you will delete ALL issues in this project with no way to recover them.
 
-2. Place the following code in a file in your eventum/misc directory.
-Change "MY_WHERE_CLAUSE" to be a specific issue ID, or change \$issues
-to be an array of issue IDs.
+2. Place the following code in a file in your eventum/misc directory. Change "MY_WHERE_CLAUSE" to be a specific issue ID, or change \$issues to be an array of issue IDs.
 
-#### Original Script {#original-script}
+#### Original Script
 
     <?php
     include_once("../init.php");
@@ -55,7 +51,7 @@ to be an array of issue IDs.
     }
     ?>
 
-#### Modified script {#modified-script}
+#### Modified script
 
 The above script must be modified for Eventum 2.01:
 
@@ -110,10 +106,9 @@ The above script must be modified for Eventum 2.01:
 } ?\>
 
 </pre>
-#### Modified script {#modified-script-1}
+#### Modified script
 
-A modified script for Eventum 2.1.1: This script use the global variable
-APP_DEFAULT_DB and APP_TABLE_PREFIX
+A modified script for Eventum 2.1.1: This script use the global variable APP_DEFAULT_DB and APP_TABLE_PREFIX
 
     <?php
     require_once(dirname(__FILE__) . "/../init.php");
@@ -169,5 +164,4 @@ APP_DEFAULT_DB and APP_TABLE_PREFIX
 ?\>
 
 </pre>
-A modified Script can be found on the [discussion
-page](/Eventum:Talk:Deleting_Issues "wikilink")
+A modified Script can be found on the [discussion page](/Eventum:Talk:Deleting_Issues "wikilink")

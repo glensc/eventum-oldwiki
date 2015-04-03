@@ -1,10 +1,6 @@
 Associate incoming emails only with new issues
 
-On the associate emails page, the selection box to select the issue to
-associate an email with soon gets too many entries, most of them closed
-issues. This patch limits the selection to only open issues. (issue
-closed date is null). A limitation of this is that an email can't be
-associated with a closed issue, the issue has to be reopened first.
+On the associate emails page, the selection box to select the issue to associate an email with soon gets too many entries, most of them closed issues. This patch limits the selection to only open issues. (issue closed date is null). A limitation of this is that an email can't be associated with a closed issue, the issue has to be reopened first.
 
     --- eventum-1.7.0/emails.php    2005-12-30 08:27:24.000000000  1300
         eventum/emails.php  2006-02-22 12:21:59.000000000  1300

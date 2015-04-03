@@ -1,15 +1,11 @@
-This mod will limit what a project manager can do in the Administration
-section.
+This mod will limit what a project manager can do in the Administration section.
 
--   Managers can add / edit /update users only on the projects they
-    manage.
--   Managers can modify project parameters only on the projects they
-    manage.
+-   Managers can add / edit /update users only on the projects they manage.
+-   Managers can modify project parameters only on the projects they manage.
 
 Administrators can still do anything on any project.
 
-The down side of this is that Eventum restricts access to three
-project-level pages to Administrators:
+The down side of this is that Eventum restricts access to three project-level pages to Administrators:
 
 -   Manage Email Accounts
 -   Manage Custom Fields

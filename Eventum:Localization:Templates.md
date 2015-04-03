@@ -1,19 +1,8 @@
 == Preparing Templates ==
 
-The following is a list of templates that need to have text strings
-wrapped in '{t}' and '{/t}'. For strings in templates located between
-'{literal}{/literal}' tags (such as within javascript), drop out of the
-{literal} tag , like this '{/literal}{t}String{/t}{literal}'. I have
-split the list into groups of 10, and assigned them to the people who
-have volunteered to help. I have not paid any attention to the length or
-complexity of files, so if you get simple ones and finish early, feel
-free to take another group of files. Anyone who does not have a group of
-files assigned to them, feel free to volunteer. Please put your name (or
-nickname) next to the list of files. Once you have a group of files
-complete, please email them to me, bryan@<the name of my company>.com
+The following is a list of templates that need to have text strings wrapped in '{t}' and '{/t}'. For strings in templates located between '{literal}{/literal}' tags (such as within javascript), drop out of the {literal} tag , like this '{/literal}{t}String{/t}{literal}'. I have split the list into groups of 10, and assigned them to the people who have volunteered to help. I have not paid any attention to the length or complexity of files, so if you get simple ones and finish early, feel free to take another group of files. Anyone who does not have a group of files assigned to them, feel free to volunteer. Please put your name (or nickname) next to the list of files. Once you have a group of files complete, please email them to me, bryan@<the name of my company>.com
 
-You can download the tar file to start localizing here:
-<http://eventum.mysql.org/eventum-localization-dev.tar.gz>
+You can download the tar file to start localizing here: <http://eventum.mysql.org/eventum-localization-dev.tar.gz>
 
 `Assignee: ISC Edwin Cruz [DONE]`
 `js/dynamic_custom_field.tpl.js`
