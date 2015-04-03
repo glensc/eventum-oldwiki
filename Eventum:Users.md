@@ -1,11 +1,7 @@
----
-title: Eventum:Users
-permalink: /Eventum:Users/
----
-
 == Adding Users ==
 
-Only Administrators are allowed to add users. The initial Administrator is created when Eventum is installed.
+Only Administrators are allowed to add users. The initial Administrator
+is created when Eventum is installed.
 
 To add a new user:
 
@@ -16,7 +12,7 @@ To add a new user:
 
 **NOTE:** The Email Address is also the user's login, and must be valid.
 
-Editing Users
+Editing Users {#editing-users}
 -------------
 
 Only Administrators are allowed to edit user information:
@@ -27,37 +23,51 @@ Only Administrators are allowed to edit user information:
 -   Edit the user's information
 -   Click the "Update User" button
 
-Assigning Projects and Roles
+Assigning Projects and Roles {#assigning-projects-and-roles}
 ----------------------------
 
-When creating or editing a user, use "Assigned Projects and Roles" to set the desired level of access for each project (or "No Access" to exclude the user from a project).
+When creating or editing a user, use "Assigned Projects and Roles" to
+set the desired level of access for each project (or "No Access" to
+exclude the user from a project).
 
-### Types of Roles
+### Types of Roles {#types-of-roles}
 
-#### Viewer
+#### Viewer {#viewer}
 
-A Viewer can only log in and view issues. No input options are allowed other than updating personal preferences.
+A Viewer can only log in and view issues. No input options are allowed
+other than updating personal preferences.
 
-#### Reporter
+#### Reporter {#reporter}
 
-A Reporter is considered an "external" user, who can report issues, but is excluded from viewing any internal discussion/notes on the issue until they are formally replied to.
+A Reporter is considered an "external" user, who can report issues, but
+is excluded from viewing any internal discussion/notes on the issue
+until they are formally replied to.
 
-#### Customer
+#### Customer {#customer}
 
-The Customer role has the most restrictions on it, such as only being able to see issues from the same customer. Some of the fields are also hidden from this user. This role requires the use of the Customer API.
+The Customer role has the most restrictions on it, such as only being
+able to see issues from the same customer. Some of the fields are also
+hidden from this user. This role requires the use of the Customer API.
 
-#### Standard User
+#### Standard User {#standard-user}
 
-The Standard User can perform most actions in Eventum, can view internal discussions, but cannot change any configuration options.
+The Standard User can perform most actions in Eventum, can view internal
+discussions, but cannot change any configuration options.
 
-#### Developer
+#### Developer {#developer}
 
-Similar to the Standard User role, but this role has access to the clocking in function, can set reminder triggers and set an issue as Private - a Standard User can't.
+Similar to the Standard User role, but this role has access to the
+clocking in function, can set reminder triggers and set an issue as
+Private - a Standard User can't.
 
-#### Manager
+#### Manager {#manager}
 
-A Manager has access to many configuration options (including everything listed under "Areas") on the Administration page.
+A Manager has access to many configuration options (including everything
+listed under "Areas") on the Administration page.
 
-#### Administrator
+#### Administrator {#administrator}
 
-The Administrator is an Eventum super user. All features are available to Administrators. Administrators will see an extra "Configuration" section on the "Administration" page, including general setup, email configuration, custom field creation, and more.
+The Administrator is an Eventum super user. All features are available
+to Administrators. Administrators will see an extra "Configuration"
+section on the "Administration" page, including general setup, email
+configuration, custom field creation, and more.

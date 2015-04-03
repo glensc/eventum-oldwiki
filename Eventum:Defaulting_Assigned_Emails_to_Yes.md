@@ -1,8 +1,3 @@
----
-title: Eventum:Defaulting Assigned Emails to Yes
-permalink: /Eventum:Defaulting_Assigned_Emails_to_Yes/
----
-
 Diffs for fixing the assigned email feature
 
     Index: preferences.php

@@ -1,11 +1,8 @@
----
-title: Eventum:Setting up email routing with postfix
-permalink: /Eventum:Setting_up_email_routing_with_postfix/
----
-
 == Quick Notes ==
 
-When you're setting up Eventum's [Email Routing Interface](/Eventum:Email_Routing_Interface "wikilink") for postfix, use these options in the Administration -\> General Setup area:
+When you're setting up Eventum's [Email Routing
+Interface](/Eventum:Email_Routing_Interface "wikilink") for postfix, use
+these options in the Administration -\> General Setup area:
 
 `Email Routing Interface: Enabled`
 `Recipient Type Flag: [doesn't matter, choose any]`
@@ -21,12 +18,12 @@ When you're setting up Eventum's [Email Routing Interface](/Eventum:Email_Routin
 `Note Address Prefix: draft-`
 `Address Hostname: [the domain name of the email address issues should be sent to]`
 
-Postfix configuration
+Postfix configuration {#postfix-configuration}
 ---------------------
 
 There are different ways to implement the goal.
 
-### using local PHP script
+### using local PHP script {#using-local-php-script}
 
 In /etc/mail/main.cf define
 
@@ -54,7 +51,7 @@ Run postmap on that file
 
 Restart your postfix to take into account main.cf and master.cf changes
 
-### forwarding all domain mails to IMAP account
+### forwarding all domain mails to IMAP account {#forwarding-all-domain-mails-to-imap-account}
 
 in /etc/mail/virtual write
 

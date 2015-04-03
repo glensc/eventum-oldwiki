@@ -1,11 +1,11 @@
----
-title: Eventum:Hide Closed Issues on Stats (Main) Page
-permalink: /Eventum:Hide_Closed_Issues_on_Stats_(Main)_Page/
----
+This mod was designed to give the users the option to show closed issues
+or not, just like the Issue List window. When Closed issues are hidden,
+the numeric listing on the left side eliminates them as well and only
+shows a single column of numbers.
 
-This mod was designed to give the users the option to show closed issues or not, just like the Issue List window. When Closed issues are hidden, the numeric listing on the left side eliminates them as well and only shows a single column of numbers.
-
-What I did was copy the functionality almost verbatim from List Issues and applied it to Stats. I managed to keep the affected modules to 3 with 1 template affected.
+What I did was copy the functionality almost verbatim from List Issues
+and applied it to Stats. I managed to keep the affected modules to 3
+with 1 template affected.
 
 The biggest change: include/class.stats.php
 

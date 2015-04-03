@@ -1,8 +1,3 @@
----
-title: Eventum:Enhanced FAQ part 1
-permalink: /Eventum:Enhanced_FAQ_part_1/
----
-
 ALTER TABLE faq add faq_published tinyint(1) NOT NULL DEFAULT 0;
 
 ALTER TABLE faq add faq_deleted tinyint(1) NOT NULL DEFAULT 0;

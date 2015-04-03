@@ -1,13 +1,13 @@
----
-title: Eventum:WorkflowExamples
-permalink: /Eventum:WorkflowExamples/
----
-
 == Workflow Examples ==
 
-The following are examples of individual workflow methods to perform special functionality. Note that these must all appear within an extended Abstract_Workflow_Backend class. Please refer to [Eventum:WorkflowDocumentation](/Eventum:WorkflowDocumentation "wikilink") documentation for instructions on creating a file that extends the Abstract_Workflow_Backend class.
+The following are examples of individual workflow methods to perform
+special functionality. Note that these must all appear within an
+extended Abstract_Workflow_Backend class. Please refer to
+[Eventum:WorkflowDocumentation](/Eventum:WorkflowDocumentation "wikilink")
+documentation for instructions on creating a file that extends the
+Abstract_Workflow_Backend class.
 
-### Update Percentage Complete when Closing an Issue
+### Update Percentage Complete when Closing an Issue {#update-percentage-complete-when-closing-an-issue}
 
     function handleIssueClosed($prj_id, $issue_id, $send_notification, $resolution_id, $status_id, $reason)
     {
@@ -24,7 +24,7 @@ The following are examples of individual workflow methods to perform special fun
         }
     }
 
-### Allow all members of the notification list to send emails
+### Allow all members of the notification list to send emails {#allow-all-members-of-the-notification-list-to-send-emails}
 
     function canEmailIssue($prj_id, $issue_id, $email)
     {
@@ -37,20 +37,23 @@ The following are examples of individual workflow methods to perform special fun
         }
     }
 
-### Allow anyone to reply to an email
+### Allow anyone to reply to an email {#allow-anyone-to-reply-to-an-email}
 
-This allows anyone to reply to an issue without first being added to the Authorized Repliers list, so they won't get blocked.
+This allows anyone to reply to an issue without first being added to the
+Authorized Repliers list, so they won't get blocked.
 
-**WARNING:** This may not be desirable for all sites. Use a more restrictive method if problems result from bad senders.
+**WARNING:** This may not be desirable for all sites. Use a more
+restrictive method if problems result from bad senders.
 
 ` function canEmailIssue($prj_id, $issue_id, $email)`
 ` {`
 `   return true;`
 ` }`
 
-### Add everyone on To/CC list of email to notification list
+### Add everyone on To/CC list of email to notification list {#add-everyone-on-tocc-list-of-email-to-notification-list}
 
-Note: If you are using email routing (or even if you are not, you might need to manually change \$address_not_too_add.
+Note: If you are using email routing (or even if you are not, you might
+need to manually change \$address_not_too_add.
 
         function handleNewEmail($prj_id, $issue_id, $message, $row = FALSE, $closing = false)
         {
@@ -78,9 +81,10 @@ Note: If you are using email routing (or even if you are not, you might need to 
             }
         }
 
-### No external email
+### No external email {#no-external-email}
 
-Stops Eventum from sending emails other than to registered users. Thanks to Bryan for writing this.
+Stops Eventum from sending emails other than to registered users. Thanks
+to Bryan for writing this.
 
         function shouldEmailAddress($prj_id, $address)
         {
@@ -92,9 +96,10 @@ Stops Eventum from sending emails other than to registered users. Thanks to Brya
             }
         }
 
-### Allow all Developers to send email
+### Allow all Developers to send email {#allow-all-developers-to-send-email}
 
-Allow all Developer users to send email to the issue without being an assignee or on the authorized repliers list.
+Allow all Developer users to send email to the issue without being an
+assignee or on the authorized repliers list.
 
         /**
          * Allows all users with a role of developer or above to email
@@ -116,7 +121,7 @@ Allow all Developer users to send email to the issue without being an assignee o
             }
         }
 
-### Prevent certain email addresses from being added to NL
+### Prevent certain email addresses from being added to NL {#prevent-certain-email-addresses-from-being-added-to-nl}
 
         function shouldEmailAddress($prj_id, $address)
         {
@@ -128,13 +133,17 @@ Allow all Developer users to send email to the issue without being an assignee o
             }
         }
 
-### Add anonymous reporter to issue notification list
+### Add anonymous reporter to issue notification list {#add-anonymous-reporter-to-issue-notification-list}
 
-Original code from [mailing list](http://lists.mysql.com/eventum-users/1711), but made it work.
+Original code from [mailing
+list](http://lists.mysql.com/eventum-users/1711), but made it work.
 
-Usage: Add two custom fields to anonymous reporting (name, email) and add a new workflow.
+Usage: Add two custom fields to anonymous reporting (name, email) and
+add a new workflow.
 
-Notice: Remember to replace NameOfYourBackend with your Class backend name which extends Abstract_Workflow_Backend in your custom backend file.
+Notice: Remember to replace NameOfYourBackend with your Class backend
+name which extends Abstract_Workflow_Backend in your custom backend
+file.
 
     function handleNewIssue($prj_id, $issue_id, $has_TAM, $has_RR)
     {
@@ -175,9 +184,10 @@ Notice: Remember to replace NameOfYourBackend with your Class backend name which
      }
     }
 
-### Re-open a closed issue when new email is associated
+### Re-open a closed issue when new email is associated {#re-open-a-closed-issue-when-new-email-is-associated}
 
-Original code from [mailing list](http://lists.mysql.com/eventum-users/4693).
+Original code from [mailing
+list](http://lists.mysql.com/eventum-users/4693).
 
 
         function handleNewEmail($prj_id, $issue_id, $message, $row = false, $closing = false)
@@ -190,9 +200,13 @@ Original code from [mailing list](http://lists.mysql.com/eventum-users/4693).
             }
         }
 
-WARNING: This code will change the status of an issue when an email is associated by ANY mean, not necessarily an auto-associated email. For example if you update the closed issue, send email or close the issue with Send Notification to All, it will add an email to the Associated Emails list and the status will be updated.
+WARNING: This code will change the status of an issue when an email is
+associated by ANY mean, not necessarily an auto-associated email. For
+example if you update the closed issue, send email or close the issue
+with Send Notification to All, it will add an email to the Associated
+Emails list and the status will be updated.
 
-### Change issue status on incoming customer email
+### Change issue status on incoming customer email {#change-issue-status-on-incoming-customer-email}
 
 `   function handleNewEmail($prj_id, $issue_id, $message, $row = false, $closing = false)`
 `   {`

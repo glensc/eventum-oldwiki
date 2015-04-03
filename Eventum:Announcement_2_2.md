@@ -1,8 +1,3 @@
----
-title: Eventum:Announcement 2 2
-permalink: /Eventum:Announcement_2_2/
----
-
 = Eventum 2.2 Release Announcement =
 
     Hi,

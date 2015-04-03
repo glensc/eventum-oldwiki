@@ -1,13 +1,14 @@
----
-title: Eventum:WorkflowDocumentation
-permalink: /Eventum:WorkflowDocumentation/
----
-
 == Workflow API ==
 
-The workflow API is used to provide custom functionality to Eventum. Many common events (creating/assigning/updating/closing issues, receiving/associating/blocking email, new notes, etc.) are mapped to corresponding methods in the Abstract_Workflow_Backend class, which can be extended to provide new functionality for those events. Each project can have its own customization of the class, or can share a single customization.
+The workflow API is used to provide custom functionality to Eventum.
+Many common events (creating/assigning/updating/closing issues,
+receiving/associating/blocking email, new notes, etc.) are mapped to
+corresponding methods in the Abstract_Workflow_Backend class, which
+can be extended to provide new functionality for those events. Each
+project can have its own customization of the class, or can share a
+single customization.
 
-### Getting Started
+### Getting Started {#getting-started}
 
 First, review the example workflow implementation:
 
@@ -17,21 +18,35 @@ This example extends the Abstract_Workflow_Backend class defined in:
 
 ` lib/eventum/workflow/class.abstract_workflow_backend.php`
 
-All methods of the Abstract_Workflow_Backend class that are available for customization are defined in this file. For example, if you want to customize Eventum's behaviour when closing an issue, you will be adding your own code to the handleIssueClosed() function when you extend the class. You will do this in a new file, so do not edit class.abstract_workflow_backend.php.
+All methods of the Abstract_Workflow_Backend class that are available
+for customization are defined in this file. For example, if you want to
+customize Eventum's behaviour when closing an issue, you will be adding
+your own code to the handleIssueClosed() function when you extend the
+class. You will do this in a new file, so do not edit
+class.abstract_workflow_backend.php.
 
-Note that while a copy of class.example.php can be used as a basis for your own customizations, it does contain functions that affect the behaviour of Eventum, so you should remove any functions you are not using, to prevent unexpected results.
+Note that while a copy of class.example.php can be used as a basis for
+your own customizations, it does contain functions that affect the
+behaviour of Eventum, so you should remove any functions you are not
+using, to prevent unexpected results.
 
-#### Creating a Workflow Class
+#### Creating a Workflow Class {#creating-a-workflow-class}
 
-First, you must create a file in lib/eventum/workflow/ that will be used to extend the Abstract_Workflow_Backend class. The name of this file is important, as it will indicate a collection of customizations that can be applied to one or more projects. The format of the filename is:
+First, you must create a file in lib/eventum/workflow/ that will be used
+to extend the Abstract_Workflow_Backend class. The name of this file
+is important, as it will indicate a collection of customizations that
+can be applied to one or more projects. The format of the filename is:
 
 ` class.`<name>`.php`
 
-So, assuming you are customizing eventum for "Acme, Inc.", you could name your file:
+So, assuming you are customizing eventum for "Acme, Inc.", you could
+name your file:
 
 ` class.acme.php`
 
-The file must be valid PHP and must include the Abstract_Workflow_Backend class in order to extend it. Therefore, the contents will always be in the following format:
+The file must be valid PHP and must include the
+Abstract_Workflow_Backend class in order to extend it. Therefore, the
+contents will always be in the following format:
 
 ` `<?php
   require_once(APP_INC_PATH . "workflow/class.abstract_workflow_backend.php");
@@ -40,7 +55,8 @@ The file must be valid PHP and must include the Abstract_Workflow_Backend class 
 `     /** Put the methods you want to customize here */`
 ` }`
 
-Note that you must provide a name for your new class. For our example, we could use:
+Note that you must provide a name for your new class. For our example,
+we could use:
 
 ` `<?php
   require_once(APP_INC_PATH . "workflow/class.abstract_workflow_backend.php");
@@ -69,14 +85,19 @@ Once you have created your class, you must set your project(s) to use it. Only o
 
 Your project should now be using your workflow class.
 
-### Individual Methods
+### Individual Methods {#individual-methods}
 
-Please see /eventum/include/workflow/class.abstract_workflow_backend.php for the individual methods you can override.
+Please see
+/eventum/include/workflow/class.abstract_workflow_backend.php for the
+individual methods you can override.
 
-### Future Direction
+### Future Direction {#future-direction}
 
-As Eventum is developed more methods will be added to the workflow class. If you need a new workflow method, or you need more arguments passed to an existing method please email the Eventum development list.
+As Eventum is developed more methods will be added to the workflow
+class. If you need a new workflow method, or you need more arguments
+passed to an existing method please email the Eventum development list.
 
-### Examples
+### Examples {#examples}
 
-Please see [the examples page](/Eventum:WorkflowExamples "wikilink") for example workflow methods.
+Please see [the examples page](/Eventum:WorkflowExamples "wikilink") for
+example workflow methods.

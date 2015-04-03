@@ -1,58 +1,93 @@
----
-title: Eventum:General Setup
-permalink: /Eventum:General_Setup/
----
+This is a description of the options you will find in General Setup as
+an Administrador User in the Administration, Configuration options.
 
-This is a description of the options you will find in General Setup as an Administrador User in the Administration, Configuration options.
-
-General Setup
+General Setup {#general-setup}
 -------------
 
-### Tool Caption
+### Tool Caption {#tool-caption}
 
-The Tool Caption is the name for this particular Eventum Instance. The default value is "Eventum", but you can change it to something like "MyCompany Tracking System", "MyCompany Tickets" or "Tech Support". This caption will be displayed for all projects, in the main login screen, inside Eventum Header menu, at the upper left corner and within email notifications, so choose wisely, or even better, just leave "Eventum".
+The Tool Caption is the name for this particular Eventum Instance. The
+default value is "Eventum", but you can change it to something like
+"MyCompany Tracking System", "MyCompany Tickets" or "Tech Support". This
+caption will be displayed for all projects, in the main login screen,
+inside Eventum Header menu, at the upper left corner and within email
+notifications, so choose wisely, or even better, just leave "Eventum".
 
-### SMTP (Outgoing Email) Settings
+### SMTP (Outgoing Email) Settings {#smtp-outgoing-email-settings}
 
-Here you can define the settings for the SMTP server. A typical configuration will require setting only the Sender Email (the "From:" in the email), the Hostname or IP of the server, and the TCP/IP port, usually 25 for SMTP. The Sender Email MUST contain a real email address, e.g. "eventum@example.com" or "Eventum <eventum@example.com>"
+Here you can define the settings for the SMTP server. A typical
+configuration will require setting only the Sender Email (the "From:" in
+the email), the Hostname or IP of the server, and the TCP/IP port,
+usually 25 for SMTP. The Sender Email MUST contain a real email address,
+e.g. "eventum@example.com" or "Eventum <eventum@example.com>"
 
-### Open Account Signup
+### Open Account Signup {#open-account-signup}
 
-If enabled, a link will be displayed in the login screen, where any user will be able to signup for an account, only by entering Name, Email and Password. A confirmation email with an activation link is sent in order verificate and activate the account. The account is created with selected profile for the selected projects from multiple combo.
+If enabled, a link will be displayed in the login screen, where any user
+will be able to signup for an account, only by entering Name, Email and
+Password. A confirmation email with an activation link is sent in order
+verificate and activate the account. The account is created with
+selected profile for the selected projects from multiple combo.
 
-### Subject Based Routing
+### Subject Based Routing {#subject-based-routing}
 
-If enabled, Eventum will look in the subject line of incoming notes/emails (usually replies to notifications) to determine which issue they should be associated with. Subject-based routing uses only the first issue number in square brackets it finds in the subject to associate the email, e.g. [\#555]. Without subject-based or address-based routing, Eventum relies on mail headers, namely message-id and in-reply-to.
+If enabled, Eventum will look in the subject line of incoming
+notes/emails (usually replies to notifications) to determine which issue
+they should be associated with. Subject-based routing uses only the
+first issue number in square brackets it finds in the subject to
+associate the email, e.g. [\#555]. Without subject-based or
+address-based routing, Eventum relies on mail headers, namely message-id
+and in-reply-to.
 
-### Email Recipient Type Flag
+### Email Recipient Type Flag {#email-recipient-type-flag}
 
-This will be included in the From address of all emails sent by Eventum, before or after Sender Name, as configured.
+This will be included in the From address of all emails sent by Eventum,
+before or after Sender Name, as configured.
 
-### Email Routing Interface
+### Email Routing Interface {#email-routing-interface}
 
-The [Email Routing Interface](/Eventum:Email_Routing_Interface "wikilink") is an optional way to automatically associate emails (or notes or drafts) with an Eventum issue, with Email Integration feature enabled.
+The [Email Routing
+Interface](/Eventum:Email_Routing_Interface "wikilink") is an optional
+way to automatically associate emails (or notes or drafts) with an
+Eventum issue, with Email Integration feature enabled.
 
-The default behavior is header (Message-ID/In-Reply-To) routing. Mail clients sometimes mangle these headers which cause problems for Eventum. Using subject based routing is better then header based while the most reliable is address (issue-XXX@example.com) based.
+The default behavior is header (Message-ID/In-Reply-To) routing. Mail
+clients sometimes mangle these headers which cause problems for Eventum.
+Using subject based routing is better then header based while the most
+reliable is address (issue-XXX@example.com) based.
 
-By setting up the mail server (MTA) to pipe emails sent to a specific address into PHP scripts, users are able to use their email clients to reply to emails coming from Eventum, and those replies will be automatically associated with the issue and broadcast to the issue's notification list.
+By setting up the mail server (MTA) to pipe emails sent to a specific
+address into PHP scripts, users are able to use their email clients to
+reply to emails coming from Eventum, and those replies will be
+automatically associated with the issue and broadcast to the issue's
+notification list.
 
-### Note Recipient Type Flag
+### Note Recipient Type Flag {#note-recipient-type-flag}
 
-This will be included in the From address of all notes sent by Eventum, before or after Sender Name, as configured.
+This will be included in the From address of all notes sent by Eventum,
+before or after Sender Name, as configured.
 
-### Internal Note Routing Interface
+### Internal Note Routing Interface {#internal-note-routing-interface}
 
-Same as [Email Routing Interface](/Eventum:General_Setup#Email_Routing_Interface "wikilink") for Internal Notes.
+Same as [Email Routing
+Interface](/Eventum:General_Setup#Email_Routing_Interface "wikilink")
+for Internal Notes.
 
-### Email Draft Interface
+### Email Draft Interface {#email-draft-interface}
 
-Same as [Email Routing Interface](/Eventum:General_Setup#Email_Routing_Interface "wikilink") for Drafts.
+Same as [Email Routing
+Interface](/Eventum:General_Setup#Email_Routing_Interface "wikilink")
+for Drafts.
 
-### SCM Integration
+### SCM Integration {#scm-integration}
 
-This feature allows your software development teams to integrate your Source Control Management system with your Issue Tracking System.
+This feature allows your software development teams to integrate your
+Source Control Management system with your Issue Tracking System.
 
-The integration is implemented in such a way that it will be forward compatible with pretty much any SCM system, such as CVS. When entering the required information for the checkout page and diff page input fields, use the following placeholders:
+The integration is implemented in such a way that it will be forward
+compatible with pretty much any SCM system, such as CVS. When entering
+the required information for the checkout page and diff page input
+fields, use the following placeholders:
 
 -   `{MODULE}` - The CVS module name
 -   `{FILE}` - The filename that was committed
@@ -75,29 +110,37 @@ for newer CVS (1.12+):
 
 for CVS 1.12+, you need at least r4452
 
-### Email Integration Feature
+### Email Integration Feature {#email-integration-feature}
 
-Enable or disable the [Email Integration Feature](/Email_integration "wikilink"). If enabled it will allow to download the emails from configured accounts available in Manage Email Accounts.
+Enable or disable the [Email Integration
+Feature](/Email_integration "wikilink"). If enabled it will allow to
+download the emails from configured accounts available in Manage Email
+Accounts.
 
-### Daily Tips
+### Daily Tips {#daily-tips}
 
-Enable or disable the Daily Tips displayed in Stats (general statistics) start page. The daily tips are selected randomly from the template files in /templates/tips directory.
+Enable or disable the Daily Tips displayed in Stats (general statistics)
+start page. The daily tips are selected randomly from the template files
+in /templates/tips directory.
 
-You might add new Tip files with any name, but keeping the .tpl.html extension. Do not create any directories inside tips folder, since it could be considered as a tip file.
+You might add new Tip files with any name, but keeping the .tpl.html
+extension. Do not create any directories inside tips folder, since it
+could be considered as a tip file.
 
-### Email Spell Checker
+### Email Spell Checker {#email-spell-checker}
 
-Enable or disable Email Spell Checker, requires aspell installed in your server.
+Enable or disable Email Spell Checker, requires aspell installed in your
+server.
 
-### IRC Notifications
+### IRC Notifications {#irc-notifications}
 
 Lorem Ipsum.
 
-### Allow Un-Assigned Issues?
+### Allow Un-Assigned Issues? {#allow-un-assigned-issues}
 
 If disabled, the issues must be assigned to an Eventum User.
 
-### Default Options for Notifications
+### Default Options for Notifications {#default-options-for-notifications}
 
 Sets the default value for notifications in the following cases:
 
@@ -106,11 +149,17 @@ Sets the default value for notifications in the following cases:
 -   Emails are Associated
 -   Files are Attached
 
-For a particular issue, you may change the notification options for each single user in the Edit Notification List popup.
+For a particular issue, you may change the notification options for each
+single user in the Edit Notification List popup.
 
-### Email Reminder System Status Information
+### Email Reminder System Status Information {#email-reminder-system-status-information}
 
-The reminder system was designed to serve as a safety net for issues that need attention. Depending on what configuration you create, you may have several reminders (or alerts) to send out whenever an issue needs attention, for whatever parameter you may deem necessary. It requires to set a [cron job](/Eventum:Doing_a_fresh_install "wikilink"). To add a reminder:
+The reminder system was designed to serve as a safety net for issues
+that need attention. Depending on what configuration you create, you may
+have several reminders (or alerts) to send out whenever an issue needs
+attention, for whatever parameter you may deem necessary. It requires to
+set a [cron job](/Eventum:Doing_a_fresh_install "wikilink"). To add a
+reminder:
 
 1. Go to Manage Issue Reminders
 
@@ -118,16 +167,24 @@ The reminder system was designed to serve as a safety net for issues that need a
 
 3. From "Existing Issue Reminders" List, select Details link (Actions)
 
-4. Create 1 (or more) Action, choosing Send Email Alert To... (Action Type) - select some users
+4. Create 1 (or more) Action, choosing Send Email Alert To... (Action
+Type) - select some users
 
 5. From "Existing Actions" List, select Details link (Conditions)
 
-6. Create 1 (or more) Condition, Choose - Field "Last Update Date" Choose - Operator "greater or equal than" Enter - Value "2" (hours) or other condition.
+6. Create 1 (or more) Condition, Choose - Field "Last Update Date"
+Choose - Operator "greater or equal than" Enter - Value "2" (hours) or
+other condition.
 
-7. Verify if the reminder emails are sent before and after the condition is true, from command line, run the [reminder script](/Eventum:Doing_a_fresh_install#Reminder_System_.28misc.2Fcheck_reminders.php.29 "wikilink").
+7. Verify if the reminder emails are sent before and after the condition
+is true, from command line, run the [reminder
+script](/Eventum:Doing_a_fresh_install#Reminder_System_.28misc.2Fcheck_reminders.php.29 "wikilink").
 
-Notice that you can add multiple simultaneous Conditions for a single Action.
+Notice that you can add multiple simultaneous Conditions for a single
+Action.
 
-### Email Error Logging System
+### Email Error Logging System {#email-error-logging-system}
 
-When an error is detected in Eventum, it is recorded in the log file [path-to-eventum]/log/errors.log; additionally if this option is enabled, the error will be sent by email to the addresses defined here.
+When an error is detected in Eventum, it is recorded in the log file
+[path-to-eventum]/log/errors.log; additionally if this option is
+enabled, the error will be sent by email to the addresses defined here.

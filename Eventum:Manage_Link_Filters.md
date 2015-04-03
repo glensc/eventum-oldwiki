@@ -1,16 +1,14 @@
----
-title: Eventum:Manage Link Filters
-permalink: /Eventum:Manage_Link_Filters/
----
+Link filters are used to replace text with an automatic link to some
+external resource. It uses regular expressions to replace the text.
 
-Link filters are used to replace text with an automatic link to some external resource. It uses regular expressions to replace the text.
+Specify the search pattern in the pattern field without delimiters.
+Specify the entire string you would like to use as a replacement to the
+matched text.
 
-Specify the search pattern in the pattern field without delimiters. Specify the entire string you would like to use as a replacement to the matched text.
-
-Useful link filters
+Useful link filters {#useful-link-filters}
 -------------------
 
-### linking to eventum attachment
+### linking to eventum attachment {#linking-to-eventum-attachment}
 
 pattern:
 
@@ -26,7 +24,7 @@ description:
 
 note id you can grab by copying link url.
 
-### linking to eventum note
+### linking to eventum note {#linking-to-eventum-note}
 
 pattern:
 
@@ -40,4 +38,5 @@ description:
 
 `eventum note`
 
-note id is little complicated, you have to copy the id from link of the popup window.
+note id is little complicated, you have to copy the id from link of the
+popup window.

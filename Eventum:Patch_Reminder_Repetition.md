@@ -1,16 +1,15 @@
----
-title: Eventum:Patch Reminder Repetition
-permalink: /Eventum:Patch_Reminder_Repetition/
----
+This patch adds the possibility to specify a reminder repetition period.
+The reminder is repeated after the specified time (in minutes).
 
-This patch adds the possibility to specify a reminder repetition period. The reminder is repeated after the specified time (in minutes).
-
-Use case example: a reminder is sent every 3 hours, if the issue status was not changed.
+Use case example: a reminder is sent every 3 hours, if the issue status
+was not changed.
 
 The following archives contain the patched files and the diff files.
 
--   [patch for eventum 2.2](http://medienhof.at/tmp/patch_reminder_2.2.tar.gz)
--   [patch for eventum 2.1.1](http://medienhof.at/tmp/patch_reminder_2.1.1.tar.gz)
+-   [patch for eventum
+    2.2](http://medienhof.at/tmp/patch_reminder_2.2.tar.gz)
+-   [patch for eventum
+    2.1.1](http://medienhof.at/tmp/patch_reminder_2.1.1.tar.gz)
 
 Database Patch
 

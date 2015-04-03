@@ -1,76 +1,124 @@
----
-title: Eventum:Open Source Project Mod
-permalink: /Eventum:Open_Source_Project_Mod/
----
+by Bryan Petty ([Tierra](/User:Tierra "wikilink") 22:38, 30 Aug 2007
+(CEST))
 
-by Bryan Petty ([Tierra](/User:Tierra "wikilink") 22:38, 30 Aug 2007 (CEST))
+These are some bare minimum instructions for using this Open Source mod
+to Eventum for allowing anonymous (non-registered) user access to
+tracker issues. If you have any questions, direct them to the Eventum
+mailing list. Even if I don't see your post myself, others there may be
+able to help.
 
-These are some bare minimum instructions for using this Open Source mod to Eventum for allowing anonymous (non-registered) user access to tracker issues. If you have any questions, direct them to the Eventum mailing list. Even if I don't see your post myself, others there may be able to help.
+Currently, only version 2.0.1 of Eventum is supported by this patch, but
+it may still work with newer (and maybe older) versions.
 
-Currently, only version 2.0.1 of Eventum is supported by this patch, but it may still work with newer (and maybe older) versions.
+If you haven't installed Eventum yet, do so now following the official
+instructions, then come back here.
 
-If you haven't installed Eventum yet, do so now following the official instructions, then come back here.
-
-Setup Instructions
+Setup Instructions {#setup-instructions}
 ------------------
 
 Please backup your Eventum installation before continuing.
 
-### Step \#1: Apply the Patch
+### Step \#1: Apply the Patch {#step-1-apply-the-patch}
 
-The first step is to apply the source patch needed to make this work. This can be done in one of two ways, only one of these is required.
+The first step is to apply the source patch needed to make this work.
+This can be done in one of two ways, only one of these is required.
 
-#### Using Patch Utilities with the Patch File
+#### Using Patch Utilities with the Patch File {#using-patch-utilities-with-the-patch-file}
 
-If you are working on a Windows-based server, or you are not familiar with using patch utilities, you may want to skip down to the other method.
+If you are working on a Windows-based server, or you are not familiar
+with using patch utilities, you may want to skip down to the other
+method.
 
--   Download [eventum-2.0.1-osmod.patch](http://ibaku.net/eventum/eventum-2.0.1-osmod.patch) to your root Eventum directory.
+-   Download
+    [eventum-2.0.1-osmod.patch](http://ibaku.net/eventum/eventum-2.0.1-osmod.patch)
+    to your root Eventum directory.
 -   Run the following command from the root installation directory:
         $ patch -p0 < eventum-2.0.1-osmod.patch
 
--   If there were any errors, try the second method, otherwise you're done and can move down to step \#2.
+-   If there were any errors, try the second method, otherwise you're
+    done and can move down to step \#2.
 
-#### Using Pre-Patched Files
+#### Using Pre-Patched Files {#using-pre-patched-files}
 
 -   Windows Users
-    -   Download [eventum-2.0.1-osmod.tar.gz](http://ibaku.net/eventum/eventum-2.0.1-osmod.tar.gz).
-    -   Unpack the contained files, and upload them to your root Eventum installation directory, overwriting the existing files.
+    -   Download
+        [eventum-2.0.1-osmod.tar.gz](http://ibaku.net/eventum/eventum-2.0.1-osmod.tar.gz).
+    -   Unpack the contained files, and upload them to your root Eventum
+        installation directory, overwriting the existing files.
 -   Linux / Unix / Mac Users
-    -   Download [eventum-2.0.1-osmod.tar.gz](http://ibaku.net/eventum/eventum-2.0.1-osmod.tar.gz) to your root Eventum directory.
+    -   Download
+        [eventum-2.0.1-osmod.tar.gz](http://ibaku.net/eventum/eventum-2.0.1-osmod.tar.gz)
+        to your root Eventum directory.
     -   Run the following command from the root installation directory:
             $ tar xzvf eventum-2.0.1-osmod.tar.gz
 
-### Step \#2: Add an Anonymous User
+### Step \#2: Add an Anonymous User {#step-2-add-an-anonymous-user}
 
 -   From the Administration panel, add a new user keeping this in mind:
-    -   This will require specifying an email address, which doesn't have to be a real email address, but I would recommend setting up a real email account anyway (they're usually free anyway).
-    -   The password can be anything. Anonymous users will not be able to retrieve the password, nor will they be able to change it. It won't be required to login either, so it doesn't really matter what you use.
-    -   The full name isn't important, but it will be what users see as their "logged in name" on every page. I'd recommend using "Anonymous" to indicate that they haven't registered or logged in.
-    -   Assigned Role: Here's where the magic of this approach to supporting anonymous users comes in. You can configure any level of access for anonymous users, as well as per-project access levels just like you would for any other registered user. You should be able to find a configuration that best suits your needs. Personally, for my open source projects, I prefer to keep this access at 'Viewer' levels, and still require users to register if they want to actually submit or comment on issues.
+    -   This will require specifying an email address, which doesn't
+        have to be a real email address, but I would recommend setting
+        up a real email account anyway (they're usually free anyway).
+    -   The password can be anything. Anonymous users will not be able
+        to retrieve the password, nor will they be able to change it. It
+        won't be required to login either, so it doesn't really matter
+        what you use.
+    -   The full name isn't important, but it will be what users see as
+        their "logged in name" on every page. I'd recommend using
+        "Anonymous" to indicate that they haven't registered or logged
+        in.
+    -   Assigned Role: Here's where the magic of this approach to
+        supporting anonymous users comes in. You can configure any level
+        of access for anonymous users, as well as per-project access
+        levels just like you would for any other registered user. You
+        should be able to find a configuration that best suits your
+        needs. Personally, for my open source projects, I prefer to keep
+        this access at 'Viewer' levels, and still require users to
+        register if they want to actually submit or comment on issues.
 
-### Step \#3: Add the Account to Your Configuration File
+### Step \#3: Add the Account to Your Configuration File {#step-3-add-the-account-to-your-configuration-file}
 
--   Open the config/config.php file for editing. If you followed the Eventum installation instructions to the letter, this file should be set as read-only, so you will need to change it back to writable first.
+-   Open the config/config.php file for editing. If you followed the
+    Eventum installation instructions to the letter, this file should be
+    set as read-only, so you will need to change it back to writable
+    first.
 -   Add the following line anywhere in the file:
 
 <!-- -->
 
     define('APP_ANON_USER', 'anonymous@example.org');
 
--   Make sure the email used in the line above is the same as the anonymous user you just setup. This will make that account the default anon user.
+-   Make sure the email used in the line above is the same as the
+    anonymous user you just setup. This will make that account the
+    default anon user.
 
-That's it! If you log out of Eventum, you will be forwarded to the login page, however, if you simply direct your browser to "list.php", you'll find that you are automatically logged in as the anonymous user (though it won't look like you're logged in since it will have "Login" and "Register" links shown still).
+That's it! If you log out of Eventum, you will be forwarded to the login
+page, however, if you simply direct your browser to "list.php", you'll
+find that you are automatically logged in as the anonymous user (though
+it won't look like you're logged in since it will have "Login" and
+"Register" links shown still).
 
-If you direct your browser at either the Login page, or the Sign Up / Register page, you are automatically logged back out of the anonymous account so you are able to login or register.
+If you direct your browser at either the Login page, or the Sign Up /
+Register page, you are automatically logged back out of the anonymous
+account so you are able to login or register.
 
-You will also notice that any links to "Preferences" have disappeared. Anonymous users are not able to change the account preferences (don't worry, they've been locked out of the page even if they tried the direct URL approach). In addition, saved searches are disabled, and you won't be able to search for issues that are assigned to the anonymous user (as this would be fairly useless).
+You will also notice that any links to "Preferences" have disappeared.
+Anonymous users are not able to change the account preferences (don't
+worry, they've been locked out of the page even if they tried the direct
+URL approach). In addition, saved searches are disabled, and you won't
+be able to search for issues that are assigned to the anonymous user (as
+this would be fairly useless).
 
-If you find any other aspects of Eventum that show up to Anonymous users, but probably shouldn't, please let me know on the Eventum mailing list.
+If you find any other aspects of Eventum that show up to Anonymous
+users, but probably shouldn't, please let me know on the Eventum mailing
+list.
 
-Full Source of the Patch
+Full Source of the Patch {#full-source-of-the-patch}
 ------------------------
 
-This is saved here for posterity (and in case my server isn't available). Without needing to copy and & paste this all to a file, you can download the patch here: <http://ibaku.net/eventum/eventum-2.0.1-osmod.patch>
+This is saved here for posterity (and in case my server isn't
+available). Without needing to copy and & paste this all to a file, you
+can download the patch here:
+<http://ibaku.net/eventum/eventum-2.0.1-osmod.patch>
 
     Index: adv_search.php
     ===================================================================

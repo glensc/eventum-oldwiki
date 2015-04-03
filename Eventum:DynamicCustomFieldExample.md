@@ -1,15 +1,15 @@
----
-title: Eventum:DynamicCustomFieldExample
-permalink: /Eventum:DynamicCustomFieldExample/
----
+Put the contents below into the file
+"include/custom_field/class.dynamic_example.php".
 
-Put the contents below into the file "include/custom_field/class.dynamic_example.php".
+Create a custom field named "Dynamic Controller", set the type to "combo
+box" and add the options to "red", "yellow" and "blue".
 
-Create a custom field named "Dynamic Controller", set the type to "combo box" and add the options to "red", "yellow" and "blue".
+Then create another custom field, named whatever you like, set the type
+to "combo box" and the custom field backend to "Dynamic Example".
 
-Then create another custom field, named whatever you like, set the type to "combo box" and the custom field backend to "Dynamic Example".
-
-Also, please make sure that **either fields got a ranking \> 0** (the default), otherwise the setup will not work (press up arrow in one will probably do).
+Also, please make sure that **either fields got a ranking \> 0** (the
+default), otherwise the setup will not work (press up arrow in one will
+probably do).
 
     <?php
     /* vim: set expandtab tabstop=4 shiftwidth=4: */

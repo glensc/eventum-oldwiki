@@ -1,11 +1,10 @@
----
-title: Eventum:Become Super-Administrator
-permalink: /Eventum:Become_Super-Administrator/
----
+The first user created during Eventum setup has Administrator access to
+all Eventum features. However, it is possible for administrators to
+accidently lose administrative access. If this happens use the following
+instructions to restore administrative access.
 
-The first user created during Eventum setup has Administrator access to all Eventum features. However, it is possible for administrators to accidently lose administrative access. If this happens use the following instructions to restore administrative access.
-
-If you want to have an access in "Administration" section with the "Configuration" section as this :
+If you want to have an access in "Administration" section with the
+"Configuration" section as this :
 
 `Configuration:`
 `   * General Setup`
@@ -43,11 +42,16 @@ if you're having recent MySQL server you can use subquery:
 
 * * * * *
 
-another solution from Eventum User mailing list [<http://lists.mysql.com/eventum-users/1415>](/http://lists.mysql.com/eventum-users/1415 "wikilink") from Joao to update the level access to one user and one project (but administrator have a full access in all projects)
+another solution from Eventum User mailing list
+[<http://lists.mysql.com/eventum-users/1415>](/http://lists.mysql.com/eventum-users/1415 "wikilink")
+from Joao to update the level access to one user and one project (but
+administrator have a full access in all projects)
 - Update the role
 
 ` REPLACE project_user VALUES (USER_ID_HERE, PROJECT_ID_HERE, 7);`
 
 The PROJECT_ID_HERE is the ID of the project in which this user is
-supposed to be an administrator under. Please let me know if that works.
- Be aware that Eventum 1.5.2 has a bug that can potentially break your administrator user privileges again. I recommend upgrading to 1.5.3
+supposed to be an administrator under. Please let me know if that
+works.
+ Be aware that Eventum 1.5.2 has a bug that can potentially break your
+administrator user privileges again. I recommend upgrading to 1.5.3

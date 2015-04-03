@@ -1,9 +1,5 @@
----
-title: Eventum:Using the IRC bot
-permalink: /Eventum:Using_the_IRC_bot/
----
-
-With Eventum you can have an IRCbot if your development team has an IRC channel. The bot's features include, but are not limited to...
+With Eventum you can have an IRCbot if your development team has an IRC
+channel. The bot's features include, but are not limited to...
 
 -   Authenticating users
 -   Clocking in and out
@@ -11,10 +7,12 @@ With Eventum you can have an IRCbot if your development team has an IRC channel.
 -   Reporting when issues are updated
 -   Listing issues that are relevant to each user
 
-Setup
+Setup {#setup}
 -----
 
-To get the bot working, first you have to go to /path-to-eventum/misc/irc/bot.php and edit a few values. In Eventum 1.6.1, these are on line 43-55
+To get the bot working, first you have to go to
+/path-to-eventum/misc/irc/bot.php and edit a few values. In Eventum
+1.6.1, these are on line 43-55
 
     $channels = array(
         Project::getID('Default Project') => array(
@@ -66,4 +64,5 @@ When done, it might look something like this...
     $username = 'identd';
     $password = 'random';
 
-To start the bot, execute "php -q bot.php" in the /path-to-eventum/misc/irc/ directory.
+To start the bot, execute "php -q bot.php" in the
+/path-to-eventum/misc/irc/ directory.

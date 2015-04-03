@@ -1,9 +1,5 @@
----
-title: Eventum:Import Users
-permalink: /Eventum:Import_Users/
----
-
-Example script to import users. Put in misc/ You will need to change the name of the project and the role.
+Example script to import users. Put in misc/ You will need to change the
+name of the project and the role.
 
     <?php
     include('../init.php'); // try: include("../config.inc.php"); // for older Eventum versions
