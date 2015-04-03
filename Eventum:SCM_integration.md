@@ -22,4 +22,4 @@ Setup instructions for CVS can be found in the Eventum help, in the "SCM Integra
 Subversion Setup
 ----------------
 
-Subversion Setup is described [here](/Eventum:Subversion_integration "wikilink").
+Subversion Setup is described [here](/Eventum:Subversion integration "wikilink").

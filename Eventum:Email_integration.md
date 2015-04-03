@@ -9,7 +9,7 @@ Incoming emails are input to the system in one of two ways:
 
 Outgoing emails are put into a queue, and sent out by a cron job (scheduled task). If the mail server is not available, the emails remain in the queue.
 
-See the [installation guide](/Doing_a_fresh_install "wikilink") for information on setting up the cron jobs, and [Email Routing Interface](/Email_Routing_Interface "wikilink") for information on setting up that feature.
+See the [installation guide](/Doing a fresh install "wikilink") for information on setting up the cron jobs, and [Email Routing Interface](/Email_Routing_Interface "wikilink") for information on setting up that feature.
 
 ### Incoming mail
 
@@ -43,7 +43,7 @@ A common mistake for the email integration is forgetting to set the mail scripts
 1.  `./crons/download_emails.php` (Downloads e-mail to Eventum)
 2.  `./crons/process_mail_queue.php` (Sends e-mail from Eventum)
 
-For user on a Unix/Linux system, the timing is generally set [using cron](/Adding_a_cron_entry "wikilink"). For Windows, use either the Task Scheduler, or find a "cron equivalent" program.
+For user on a Unix/Linux system, the timing is generally set [using cron](/Adding a cron entry "wikilink"). For Windows, use either the Task Scheduler, or find a "cron equivalent" program.
 
 Look in the INSTALL file for information on how to set up the mail scripts.
 

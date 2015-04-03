@@ -25,7 +25,7 @@ This will be included in the From address of all emails sent by Eventum, before 
 
 ### Email Routing Interface
 
-The [Email Routing Interface](/Eventum:Email_Routing_Interface "wikilink") is an optional way to automatically associate emails (or notes or drafts) with an Eventum issue, with Email Integration feature enabled.
+The [Email Routing Interface](/Eventum:Email Routing Interface "wikilink") is an optional way to automatically associate emails (or notes or drafts) with an Eventum issue, with Email Integration feature enabled.
 
 The default behavior is header (Message-ID/In-Reply-To) routing. Mail clients sometimes mangle these headers which cause problems for Eventum. Using subject based routing is better then header based while the most reliable is address (issue-XXX@example.com) based.
 
@@ -72,7 +72,7 @@ for CVS 1.12+, you need at least r4452
 
 ### Email Integration Feature
 
-Enable or disable the [Email Integration Feature](/Email_integration "wikilink"). If enabled it will allow to download the emails from configured accounts available in Manage Email Accounts.
+Enable or disable the [Email Integration Feature](/Email integration "wikilink"). If enabled it will allow to download the emails from configured accounts available in Manage Email Accounts.
 
 ### Daily Tips
 

@@ -1,4 +1,4 @@
-This describes how to set up the [Email Routing Interface](/Eventum:Email_Routing_Interface "wikilink") with the Exim MTA.
+This describes how to set up the [Email Routing Interface](/Eventum:Email Routing Interface "wikilink") with the Exim MTA.
 
 Address Extensions
 ------------------
