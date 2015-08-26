@@ -1,4 +1,5 @@
-_This wiki is being updated and restructured.  Original content was moved from older wiki site._
+_This wiki is being updated and restructured._   
+_Original content was moved from an older wiki site._
 
 ![](https://launchpadlibrarian.net/41243495/64.png)
 
@@ -15,7 +16,6 @@ Eventum is a user friendly and very flexible issue tracking system, that can be 
     * [[NetWare|Installation-notes-for-NetWare]]
     * [[PLD-Linux|Installation-notes-for-PLD-Linux]]
     * [[Windows|Installation-notes-for-Windows]]
-
 
 ### Getting Started
 * [[General-Setup|General-Setup]]
