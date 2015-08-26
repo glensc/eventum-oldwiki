@@ -29,6 +29,6 @@ Eventum is a user friendly and very flexible issue tracking system, that can be 
 * [[Enhanced FAQ II|Enhanced-FAQ-part-2]]
 
 ### Version Information
-* [[Change Log|https://github.com/eventum/eventum/blob/master/ChangeLog.md#2015-08-04-version-302]] _temp version_
+* [[Change Log|Installation:-Changelog]]
 * [[Roadmap|Roadmap]]
 * [[How to Contribute|HowToContribute]]
