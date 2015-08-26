@@ -8,7 +8,7 @@ _Original content was moved from an older wiki site._
 Eventum is a user friendly and very flexible issue tracking system, that can be used by a support department to track incoming technical support requests, or by a software development team to quickly organize tasks and bugs.
 
 ### Installation/Upgrade
-* [[New Install|Doing-a-fresh-install]]
+* [[New Install|Install:-New]]
 * [[Upgrade|Upgrading]]
 * Installation Notes:
     * [[FreeBSD-4.x|Installation-notes-for-FreeBSD-4.x]]
