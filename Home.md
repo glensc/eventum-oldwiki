@@ -8,4 +8,9 @@ Eventum is a user friendly and very flexible issue tracking system, that can be 
 * [[New Install|Doing-a-fresh-install]]
 * [[Upgrade|Upgrading]]
 
+### Frequently Asked Questions
+* [[Original FAQ|FAQ]]
+* [[Enhanced FAQ I|Enhanced-FAQ-part-1]]
+* [[Enhanced FAQ II|Enhanced-FAQ-part-2]]
+
 [[Change Log|https://github.com/eventum/eventum/blob/master/ChangeLog.md#2015-08-04-version-302]] _temp version_
