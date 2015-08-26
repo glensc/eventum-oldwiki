@@ -2,6 +2,8 @@ _This wiki is being updated and restructured._
 _Original content was moved from an older wiki site._   
 **_Some content may be outdated and needs to be revised!_**
 
+PLEASE DO NOT EDIT WIKI, WIKI MIGRATION IS NOT FINISHED, YOUR CHANGES WILL BE LOST
+
 ![](https://launchpadlibrarian.net/41243495/64.png)
 
 # What is Eventum
