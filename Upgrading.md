@@ -1,3 +1,5 @@
+## **This page is out of date!!**
+
 == Upgrade Process ==
 
 One of our objectives is to make upgrading from an earlier release as painless as possible, and we provide scripts that should bring your existing Eventum installation up-to-date.
