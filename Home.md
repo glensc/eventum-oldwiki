@@ -9,6 +9,13 @@ Eventum is a user friendly and very flexible issue tracking system, that can be 
 ### Installation/Upgrade
 * [[New Install|Doing-a-fresh-install]]
 * [[Upgrade|Upgrading]]
+* Installation Notes:
+    * [[FreeBSD-4.x|Installation-notes-for-FreeBSD-4.x]]
+    * [[Linux-based-Systems|Installation-notes-for-Linux-based-Systems]]
+    * [[NetWare|Installation-notes-for-NetWare]]
+    * [[PLD-Linux|Installation-notes-for-PLD-Linux]]
+    * [[Windows|Installation-notes-for-Windows]]
+
 
 ### Getting Started
 * [[General-Setup|General-Setup]]
